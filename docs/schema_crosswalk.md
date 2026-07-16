@@ -2,7 +2,7 @@
 
 The Stack Overflow survey changes its questions every year. This doc tracks which
 fields are safe to compare in 2023, 2024 and 2025 and which ones need care.
-Scope: Only some the fields have used in this project, so not all the survey.
+Scope: only some fields used in this project, not the whole survey.
 
 ## Fields present in all three years (safe backbone)
 
@@ -31,7 +31,7 @@ Community: `SOAccount`, `SOVisitFreq`, `SOPartFreq`, `SOComm`
 | `AIComplex` | New since 2024 - not in 2023 | Use only for 2024–2025 comparison |
 | `AIAgents` | New in 2025 only | Use as a single-year snapshot - not as a trend |
 | `DevType` role labels (Data Scientist, DBA) | Worded differently each year ("Data scientist or machine learning specialist" 2023 → "Data scientist/ML specialist" 2024 → "Data scientist" 2025) | Normalize before grouping by role |
-| Tool/collaboration categories (`MiscTech`, `ToolsTech`, `NEWCollabTools`, `OfficeStackSync`) | Reorganized in 2025 `DevEnvs`, `CommPlatform`, `SOTags` | Out of scope for this project |
+| Tool/collaboration categories (`MiscTech`, `ToolsTech`, `NEWCollabTools`, `OfficeStackSync`) | Reorganized in 2025 into `DevEnvs`, `CommPlatform`, `SOTags` | Out of scope for this project |
 
 ## Status
 

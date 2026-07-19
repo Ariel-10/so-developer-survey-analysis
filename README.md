@@ -2,7 +2,7 @@
 
 > How deep does AI adoption go for Data Analysts compared to other data roles and how did it change from 2023 to 2025?
 
-![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.14-3776AB?logo=python&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-package%20manager-DE5FE9?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-data%20cleaning-150458?logo=pandas&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/jupyter-notebook-F37626?logo=jupyter&logoColor=white)
@@ -39,7 +39,7 @@ roles and other developers from 2023 to 2025.
 
 | Tool | Purpose |
 |---|---|
-| **Python 3.12** | Data cleaning and analysis |
+| **Python 3.14** | Data cleaning and analysis |
 | **uv** | Package manager |
 | **pandas** | Load and clean the data |
 | **Jupyter Notebook** | Show the analysis step by step |

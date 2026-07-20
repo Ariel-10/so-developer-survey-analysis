@@ -1,9 +1,12 @@
 # Schema Crosswalk - Stack Overflow Developer Survey (2023–2025)
 
-The Stack Overflow survey changes its questions every year. This doc tracks which
+The Stack Overflow survey changes its questions every year. This document tracks which
 fields are safe to compare in 2023, 2024 and 2025 and which ones need care.
 
-Scope: only some fields used in this project, not the whole survey.
+**Scope:**  Only some fields used in this project, not the whole survey.
+
+This analysis started by reviewing the official survey documentation first. 
+After that, we checked it against the real data below.
 
 ## Fields present in all three years (safe backbone)
 
@@ -67,4 +70,4 @@ Scope: only some fields used in this project, not the whole survey.
 - [x] 2023 vs 2024 vs 2025 header comparison done
 - [x] Sample size check per role for `AIComplex` and `AIAgents`
 - [X] Role name normalization applied
-- [ ] Final column list locked for the cleaning script
+- [X] Final column list locked for the cleaning script

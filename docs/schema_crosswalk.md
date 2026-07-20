@@ -7,20 +7,48 @@ Scope: only some fields used in this project, not the whole survey.
 
 ## Fields present in all three years (safe backbone)
 
-Demographics and career: `MainBranch`, `Age`, `Employment`, `EdLevel`, `DevType`,
-`OrgSize`, `ICorPM`, `RemoteWork`, `Country`, `Industry`, `YearsCode`, `WorkExp`,
-`LearnCode`
+**Demographics and career:**
+- `MainBranch`
+- `Age`
+- `Employment`
+- `EdLevel`
+- `DevType`
+- `OrgSize`
+- `ICorPM`
+- `RemoteWork`
+- `Country`
+- `Industry`
+- `YearsCode`
+- `WorkExp`
+- `LearnCode`
 
-Compensation: `Currency`, `CompTotal`, `ConvertedCompYearly`
+**Compensation:**
+- `Currency`
+- `CompTotal`
+- `ConvertedCompYearly`
 
-Tech stack: `LanguageHaveWorkedWith`, `LanguageWantToWorkWith`,
-`DatabaseHaveWorkedWith`, `DatabaseWantToWorkWith`, `PlatformHaveWorkedWith`,
-`PlatformWantToWorkWith`, `WebframeHaveWorkedWith`, `WebframeWantToWorkWith`,
-`OpSysPersonal use`, `OpSysProfessional use`
+**Tech stack:**
+- `LanguageHaveWorkedWith`
+- `LanguageWantToWorkWith`
+- `DatabaseHaveWorkedWith`
+- `DatabaseWantToWorkWith`
+- `PlatformHaveWorkedWith`
+- `PlatformWantToWorkWith`
+- `WebframeHaveWorkedWith`
+- `WebframeWantToWorkWith`
+- `OpSysPersonal use`
+- `OpSysProfessional use`
 
-AI baseline: `AISelect`, `AISent`, `AIAcc`
+**AI baseline:** 
+- `AISelect`
+- `AISent`
+- `AIAcc`
 
-Community: `SOAccount`, `SOVisitFreq`, `SOPartFreq`, `SOComm`
+**Community:** 
+- `SOAccount`
+- `SOVisitFreq`
+- `SOPartFreq`
+- `SOComm`
 
 ## Known gaps and traps
 
@@ -31,12 +59,12 @@ Community: `SOAccount`, `SOVisitFreq`, `SOPartFreq`, `SOComm`
 | `JobSatPoints_1`–`_11` | Same code name in 2024 and 2025 but different meaning each year | Do not merge blindly - treat 2025 as a redesigned question |
 | `AIComplex` | New since 2024 - not in 2023 | Use only for 2024–2025 comparison |
 | `AIAgents` | New in 2025 only | Use as a single-year snapshot - not as a trend |
-| `DevType` role labels (Data Scientist, Data Engineer, DBA) | Checked against real data: Data Scientist keeps the full phrase in 2023-2024 but shortens in 2025. Data Engineer flips word order ("Engineer, data" 2023 vs "Data engineer" 2024-2025), so there’s no shared text to match. DBA adds "or engineer" in 2025. | Normalized in `01_data_cleaning.ipynb` by `role_map` |
+| `DevType` role labels (Data Scientist, Data Engineer, DBA) | Wording changes across years and word order flip, no shared text to match | Normalized in `01_data_cleaning.ipynb` by  `role_map` (see notebook for exact mappings) |
 | Tool/collaboration categories (`MiscTech`, `ToolsTech`, `NEWCollabTools`, `OfficeStackSync`) | Reorganized in 2025 into `DevEnvs`, `CommPlatform`, `SOTags` | Out of scope for this project |
 
 ## Status
 
 - [x] 2023 vs 2024 vs 2025 header comparison done
 - [x] Sample size check per role for `AIComplex` and `AIAgents`
-- [ ] Role name normalization applied
+- [X] Role name normalization applied
 - [ ] Final column list locked for the cleaning script

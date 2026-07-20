@@ -130,7 +130,7 @@ TODO - link to the published Tableau Public dashboard with screenshots.
 - [x] Dataset selected and central question defined
 - [x] GitHub repo set up
 - [x] Schema crosswalk in 2023, 2024 and 2025
-- [ ] Sample size and role name checks
+- [x] Sample size and role name checks
 - [ ] Data cleaning script - unified dataset built
 - [ ] Exploratory analysis in pandas
 - [ ] SQL queries for the key questions

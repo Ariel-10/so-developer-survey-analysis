@@ -2,6 +2,7 @@
 
 The Stack Overflow survey changes its questions every year. This doc tracks which
 fields are safe to compare in 2023, 2024 and 2025 and which ones need care.
+
 Scope: only some fields used in this project, not the whole survey.
 
 ## Fields present in all three years (safe backbone)
@@ -30,12 +31,12 @@ Community: `SOAccount`, `SOVisitFreq`, `SOPartFreq`, `SOComm`
 | `JobSatPoints_1`–`_11` | Same code name in 2024 and 2025 but different meaning each year | Do not merge blindly - treat 2025 as a redesigned question |
 | `AIComplex` | New since 2024 - not in 2023 | Use only for 2024–2025 comparison |
 | `AIAgents` | New in 2025 only | Use as a single-year snapshot - not as a trend |
-| `DevType` role labels (Data Scientist, DBA) | Worded differently each year ("Data scientist or machine learning specialist" 2023 → "Data scientist/ML specialist" 2024 → "Data scientist" 2025) | Normalize before grouping by role |
+| `DevType` role labels (Data Scientist, Data Engineer, DBA) | Checked against real data: Data Scientist keeps the full phrase in 2023-2024 but shortens in 2025. Data Engineer flips word order ("Engineer, data" 2023 vs "Data engineer" 2024-2025), so there’s no shared text to match. DBA adds "or engineer" in 2025. | Normalized in `01_data_cleaning.ipynb` by `role_map` |
 | Tool/collaboration categories (`MiscTech`, `ToolsTech`, `NEWCollabTools`, `OfficeStackSync`) | Reorganized in 2025 into `DevEnvs`, `CommPlatform`, `SOTags` | Out of scope for this project |
 
 ## Status
 
 - [x] 2023 vs 2024 vs 2025 header comparison done
-- [ ] Sample size check per role for `AIComplex` and `AIAgents`
+- [x] Sample size check per role for `AIComplex` and `AIAgents`
 - [ ] Role name normalization applied
 - [ ] Final column list locked for the cleaning script

@@ -71,7 +71,10 @@ dev-survey-analyst-trends/
 │   ├── raw/                       ← Downloaded CSVs (not tracked by git)
 │   └── processed/                 ← Cleaned and unified dataset
 │
-├── notebooks/                     ← Analysis notebooks
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb          ← Load raw CSVs, apply crosswalk and build unified dataset
+│   ├── 02_exploratory_analysis.ipynb   ← Clean outliers and explore AI adoption by role and year
+│   └── 03_sql_analysis.ipynb           ← Same findings by using SQL queries
 │
 ├── sql/                           ← SQL queries against the cleaned dataset
 │

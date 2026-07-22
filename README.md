@@ -132,7 +132,7 @@ TODO - link to the published Tableau Public dashboard with screenshots.
 - [x] Schema crosswalk in 2023, 2024 and 2025
 - [x] Sample size and role name checks
 - [X] Data cleaning script - Unified dataset built
-- [ ] Exploratory analysis in pandas
+- [X] Exploratory analysis in pandas
 - [ ] SQL queries for the key questions
 - [ ] Tableau Public dashboard built and published
 - [ ] Key Findings section written

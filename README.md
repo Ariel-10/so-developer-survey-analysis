@@ -136,7 +136,7 @@ TODO - link to the published Tableau Public dashboard with screenshots.
 - [x] Sample size and role name checks
 - [X] Data cleaning script - Unified dataset built
 - [X] Exploratory analysis in pandas
-- [ ] SQL queries for the key questions
+- [X] SQL queries for the key questions
 - [ ] Tableau Public dashboard built and published
 - [ ] Key Findings section written
 - [ ] Final polish pass (chart choice, decluttering, focus)

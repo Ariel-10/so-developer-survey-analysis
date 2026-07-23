@@ -69,7 +69,7 @@ dev-survey-analyst-trends/
 │
 ├── data/
 │   ├── raw/                       ← Downloaded CSVs (not tracked by git)
-│   └── processed/                 ← Cleaned and unified dataset
+│   └── processed/                 ← survey_clean_2023_2025.csv (unified, 01) and survey_analysis_ready.csv (outliers cleaned, 02)
 │
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb          ← Load raw CSVs, apply crosswalk and build unified dataset

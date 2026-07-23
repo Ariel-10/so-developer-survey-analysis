@@ -76,8 +76,8 @@ dev-survey-analyst-trends/
 │   ├── 02_exploratory_analysis.ipynb   ← Clean outliers and explore AI adoption by role and year
 │   └── 03_sql_analysis.ipynb           ← Same findings by using SQL queries
 │
-├── sql/                           ← SQL queries against the cleaned dataset
-│
+├── sql/
+│   └── queries.sql                ← 5 queries validating pandas findings against SQL│
 ├── docs/
 │   ├── schema_crosswalk.md        ← Field by field comparison in the 3 years
 │   └── screenshots/                ← Dashboard screenshots for this README

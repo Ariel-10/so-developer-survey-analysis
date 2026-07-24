@@ -35,6 +35,14 @@ roles and other developers from 2023 to 2025.
 
 ---
 
+## Approach
+
+This project follows Storytelling with Data (Cole Nussbaumer Knaflicb book) principle such as: one clear message per chart, minimal noise and a defined audience before choosing what to show.
+
+**Audience:** A data team lead comparing their own Data Analysts with the wider industry to decide where to invest their AI training budget.
+
+---
+
 ## Tech Stack
 
 | Tool | Purpose |
@@ -52,6 +60,9 @@ roles and other developers from 2023 to 2025.
 ## Dataset
 
 **Source:** [Stack Overflow Developer Survey](https://survey.stackoverflow.co) - 2023, 2024 and 2025 editions.
+
+This is a global industry wide survey - Not one company's internal data.
+It’s useful for benchmarking a team against the market but not for replacing a company’s own metrics.
 
 The survey changes some questions every year, so column names and answer
 formats are not always the same across years. See `docs/schema_crosswalk.md`
@@ -77,7 +88,8 @@ dev-survey-analyst-trends/
 │   └── 03_sql_analysis.ipynb           ← Same findings by using SQL queries
 │
 ├── sql/
-│   └── queries.sql                ← 5 queries validating pandas findings against SQL│
+│   └── queries.sql                ← 5 queries validating pandas findings against SQL
+│
 ├── docs/
 │   ├── schema_crosswalk.md        ← Field by field comparison in the 3 years
 │   └── screenshots/                ← Dashboard screenshots for this README

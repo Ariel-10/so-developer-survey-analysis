@@ -37,7 +37,7 @@ roles and other developers from 2023 to 2025.
 
 ## Approach
 
-This project follows Storytelling with Data (Cole Nussbaumer Knaflicb book) principle such as: one clear message per chart, minimal noise and a defined audience before choosing what to show.
+This project follows Storytelling with Data (Cole Nussbaumer Knaflicb book) principles such as one clear message per chart, minimal noise and a defined audience before choosing what to show.
 
 **Audience:** A data team lead comparing their own Data Analysts with the wider industry to decide where to invest their AI training budget.
 
